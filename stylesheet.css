@@ -1,0 +1,100 @@
+body {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  font-family: arial;
+  padding-top: 0px;
+  padding-top: 1%;
+}
+
+#Header {
+  margin: auto;
+  font-size: 30px;
+  color: black;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  justify-content: space-around;
+}
+
+#Name {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#Name h1 {
+  padding: 0px;
+  font-size: 3vw;
+}
+
+a {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding: 1%;
+  font-size: 2vw;
+  text-decoration: none;
+  color: black;
+}
+
+#HeaderMobile {
+  display: none;
+}
+
+#Header2Mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  #Header {
+    display: none;
+  }
+
+  #HeaderMobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: space-between;
+    margin-bottom: 2%;
+  }
+
+  #Header2Mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-flow: space-between;
+  }
+
+  #HeaderMobile a:hover {
+    background-color: red;
+  }
+
+  #Header2Mobile a:hover {
+    background-color: red;
+  }
+
+  #HeaderMobile a {
+    font-size: 5vw;
+  }
+
+  #Header2Mobile a {
+    font-size: 5vw;
+  }
+
+  #Name {
+    width: 100%;
+    font-family: Proza Libre;
+    color: red;
+  }
+
+  #Name h1 {
+    font-size: 10vw;
+  }
+
+
+}
